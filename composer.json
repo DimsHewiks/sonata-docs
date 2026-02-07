@@ -1,0 +1,26 @@
+{
+  "name": "sonata/docs",
+  "description": "OpenAPI docs module for Sonata framework",
+  "type": "library",
+  "require": {
+    "php": "^8.3",
+    "sonata/framework": "^1.0",
+    "zircote/swagger-php": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sonata\\Docs\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
