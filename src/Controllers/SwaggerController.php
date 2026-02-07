@@ -3,6 +3,7 @@
 namespace Sonata\Docs\Controllers;
 
 use Sonata\Framework\Attributes\Controller;
+use Sonata\Framework\Attributes\NoAuth;
 use Sonata\Framework\Attributes\Route;
 use Sonata\Framework\Attributes\Tag;
 use Sonata\Framework\Cache\OpenApiCache;
@@ -17,6 +18,7 @@ class SwaggerController
         summary: 'Получение документации',
         description: 'Метод, позволяющий получить документацию для отображения'
     )]
+    #[NoAuth]
     public function openapiSpec(): array
     {
         $debug = getenv('APP_ENV') === 'dev';
